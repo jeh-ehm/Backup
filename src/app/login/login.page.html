@@ -1,10 +1,19 @@
 <ion-content [fullscreen]="true">
-  <div id="container">
-    <h1>BatSafeU</h1>
-    <ion-input placeholder="Username"></ion-input>
-    <ion-input placeholder="Password"></ion-input>
-    <ion-button color="success" size="large" id="loginBtn" click="handleLogin()"
-      >Login</ion-button
-    >
+  <div id="page">
+    <div id="top-half">
+      <img src="/assets/BatSafeU-logo.png" alt="BatSafeU Logo" id="logo" />
+    </div>
+
+    <div id="container">
+      <ion-input placeholder="Username"></ion-input>
+      <ion-input placeholder="Password"></ion-input>
+      <ion-button
+        color="success"
+        size="large"
+        id="loginBtn"
+        click="handleLogin()"
+        >Login</ion-button
+      >
+    </div>
   </div>
 </ion-content>

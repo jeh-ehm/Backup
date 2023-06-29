@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LoginService } from '../services/login.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginPage implements OnInit {
   passwordField!: string;
 
   private unsubscribe$ = new Subject<void>();
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -24,18 +25,20 @@ export class LoginPage implements OnInit {
 
     const credentials = { username: this.usernameField, password: this.passwordField };
 
-    this.loginService.login(credentials)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(
-        (response) => {
-          // Handle successful login response
-          console.log(response);
-        },
-        (error) => {
-          // Handle error
-          console.error(error);
-        }
-      );
+    
+    this.router.navigate(['./home-screen']);
+    // Dummy API Login Implementation
+    // this.loginService.login(credentials)
+    //   .pipe(takeUntil(this.unsubscribe$))
+    //   .subscribe(
+    //     (response) => {
+    //       this.router.navigate(['./home-screen']);
+    //     },
+    //     (error) => {
+    //       // Handle error
+    //       console.error(error);
+    //     }
+    //   );
   }
 
   ngOnDestroy() {

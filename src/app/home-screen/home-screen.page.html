@@ -1,27 +1,42 @@
 <ion-content [fullscreen]="true">
-  <ion-toolbar id="title">
-    <ion-title>BatSafeU</ion-title>
-  </ion-toolbar>
+  <ion-header id="header">
+    <h1>BatSafeU</h1>
+  </ion-header>
+
+  <ion-item> What to do? </ion-item>
+
   <ion-toolbar>
     <ion-tabs id="iconTabs">
-      <ion-tab-bar slot="top">
-        <ion-tab-button tab="home">
-          <ion-icon name="play-circle"></ion-icon>
-          Listen Now
+      <ion-tab-bar slot="top" class="scrollable-tab-bar">
+        <ion-tab-button tab="threat" class="ionicon-container">
+          <ion-icon name="warning-outline"></ion-icon>
+          Report Threat
         </ion-tab-button>
-        <ion-tab-button tab="radio">
-          <ion-icon name="radio"></ion-icon>
-          Radio
+        <ion-tab-button tab="incident" class="ionicon-container">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          Report Incident
         </ion-tab-button>
-        <ion-tab-button tab="library">
-          <ion-icon name="library"></ion-icon>
-          Library
+        <ion-tab-button tab="guidelines" class="ionicon-container">
+          <ion-icon name="newspaper-outline"></ion-icon>
+          Guidelines
         </ion-tab-button>
-        <ion-tab-button tab="search">
-          <ion-icon name="search"></ion-icon>
-          Search
+        <ion-tab-button tab="tips" class="ionicon-container">
+          <ion-icon name="bulb-outline"></ion-icon>
+          Tips
+        </ion-tab-button>
+        <ion-tab-button tab="contacts" class="ionicon-container">
+          <ion-icon name="call-outline"></ion-icon>
+          Emergency Contacts
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-toolbar>
+  <!-- <ion-item>
+    <div id="panic-container">
+      <img src="/assets/PanicButton.png" alt="Panic Button" />
+    </div>
+  </ion-item> -->
+  <div class="button-container">
+    <button ion-button class="round-button" #roundButton>Quick Alert</button>
+  </div>
 </ion-content>

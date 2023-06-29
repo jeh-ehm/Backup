@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ion-content {
+    margin: 0;
+}
+
+#header {
+    height: 10vh;
+    background-color: #FF3131;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    color: #FFF;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+
+.scrollable-tab-bar {
+    display: flex;
+    overflow-x: scroll;
+    white-space: wrap;
+    width: 100vw;
+    /* Set the desired width for the tab bar container */
+    height: 20vh;
+}
+
+.scrollable-tab-bar ion-tab-button {
+    display: inline-block;
+    width: 25vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.round-button {
+    width: 90vw;
+    height: 41vh;
+    border-radius: 50%;
+    font-size: 50px;
+    font-family: Inter;
+    font-weight: 700;
+    border: solid 20px #FF3131;
+}

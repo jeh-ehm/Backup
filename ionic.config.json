@@ -1,0 +1,7 @@
+{
+  "name": "BatSafeUProto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

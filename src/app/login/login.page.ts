@@ -30,8 +30,6 @@ export class LoginPage implements OnInit {
     } else {
       console.log("Wrong Credentials");
     }
-
-
     
     // Dummy API Login Implementation
     // this.loginService.login(credentials)

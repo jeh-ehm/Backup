@@ -24,5 +24,3 @@ This study will benefit the following individuals involved in such ways.
 **Staff**. For campus staff members, an emergency response app can be a useful tool that will enable them to act swiftly and efficiently in the event of an emergency. This can protect everyone's safety on campus and lessen the effects of any emergency situation.
 
 Overall, this study can significantly impact the response in such unfortunate events by developing a reliable, and efficient emergency response application. The development of such applications can meet the incidents that may happen in the Alangilan campus to promote reliability and sustainable development. The implementation of strategies will enhance and smoothen the security and the user experience itself.
-
-

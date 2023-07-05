@@ -4,13 +4,12 @@
 }
 
 ion-content {
-    margin: 0;
+    max-height: 24vh;
 }
 
 #header {
     height: 10vh;
     background-color: #FF3131;
-    margin: 0;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -39,19 +38,23 @@ ion-content {
     width: 25vh;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-}
+// .button-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 70vh;
+// }
 
-.round-button {
-    width: 90vw;
-    height: 41vh;
-    border-radius: 50%;
-    font-size: 50px;
-    font-family: Inter;
-    font-weight: 700;
-    border: solid 20px #FF3131;
-}
+// .round-button {
+//     width: 90vw;
+//     height: 41vh;
+//     border-radius: 50%;
+//     font-size: 50px;
+//     font-family: Inter; 
+//     font-weight: 700;
+//     border: solid 20px #FF3131;
+// }
+
+// .transparent-button {
+//     --background-color: transparent;
+// }

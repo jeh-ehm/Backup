@@ -28,15 +28,19 @@ const routes: Routes = [
         loadChildren: () => import('../emergency-contacts/emergency-contacts.module').then( m => m.EmergencyContactsPageModule)
       },
       {
+        path: 'home-index',
+        loadChildren: () => import('../home-index/home-index.module').then( m => m.HomeIndexPageModule)
+      },
+      {
         path: '',
-        redirectTo: '/home-screen',
+        redirectTo: '/home-screen/home-index',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/home-screen/threat',
+    redirectTo: '/home-screen/home-index',
     pathMatch: 'full'
   }
 ];

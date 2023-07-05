@@ -25,8 +25,12 @@ export class LoginPage implements OnInit {
 
     const credentials = { username: this.usernameField, password: this.passwordField };
 
+    if (this.usernameField === 'Test' && this.passwordField === '1234') {
+      this.router.navigate(['./home-screen']);
+    } else {
+      console.log("Wrong Credentials");
+    }
     
-    this.router.navigate(['./home-screen']);
     // Dummy API Login Implementation
     // this.loginService.login(credentials)
     //   .pipe(takeUntil(this.unsubscribe$))

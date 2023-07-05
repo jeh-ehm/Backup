@@ -1,12 +1,38 @@
-<div>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-  <h1 style="color: red">Test</h1>
-</div>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="header">
+      <h2>Report A Threat</h2>
+    </div>
+
+    <div class="reportField">
+      <div class="inputField">
+        <ion-label>Threat Name</ion-label>
+        <ion-input
+          labelPlacement="floating"
+          placeholder="Enter threat name"
+        ></ion-input>
+      </div>
+      <div class="inputField">
+        <ion-input
+          label="Location"
+          labelPlacement="floating"
+          placeholder="Enter floor no or landmark"
+        ></ion-input>
+      </div>
+      <div class="inputField">
+        <ion-textarea
+          label="Short Description"
+          labelPlacement="floating"
+          placeholder="Enter meaningful description"
+        ></ion-textarea>
+      </div>
+    </div>
+    <div class="buttonArea">
+      <ion-button color="success" size="medium"> Submit Report </ion-button>
+      <ion-button color="success" size="medium"> Take a Photo </ion-button>
+    </div>
+    <ion-button (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

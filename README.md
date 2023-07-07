@@ -14,7 +14,7 @@ To summarize, incorporating the BatSafeU mobile application can make a substanti
 
 
 ### Significance of the Proposed Project
->Emergency can be deﬁned as a sudden or unpredicted situation that can affect health or the environment itself. This study will have an action to prevent or lessen it. In most campuses there are services associated with each of the identiﬁed risks in order to respond to each kind of emergency, usually ﬁreﬁghters, police and medical emergency. To trigger the necessary means to help in an emergency situation it is required that the emergency situation is reported to the authorities and there is a service capable of receiving the request and ensuring the allocation of the necessary resources for assistance. By developing the emergency application it can help improve the emergency response especially in the Alangilan campus. The study can support the growth of safety enhancement within campus of the University.
+>Emergency can be deﬁned as a sudden or unpredicted situation that can affect health or the environment itself. This study will have an action to prevent or lessen it. In most campuses there are services associated with each of the identiﬁed risks in order to respond to each kind of emergency, usually ﬁreﬁghters, police, and medical emergency. To trigger the necessary means to help in an emergency situation it is required that the emergency situation is reported to the authorities and there is a service capable of receiving the request and ensuring the allocation of the necessary resources for assistance. By developing the emergency application it can help improve the emergency response, especially in the Alangilan campus. The study can support the growth of safety enhancement within the campus of the University.
 
 > This study will benefit the following individuals involved in such ways.
 >> **Incident Management Team (IMT)**. The system will help them to fully monitor and take action about the incidents that will and might happen in the future. 
@@ -24,6 +24,10 @@ To summarize, incorporating the BatSafeU mobile application can make a substanti
 >> **Staff**. For campus staff members, an emergency response app can be a useful tool that will enable them to act swiftly and efficiently in the event of an emergency. This can protect everyone's safety on campus and lessen the effects of any emergency situation.
 
 > Overall, this study can significantly impact the response in such unfortunate events by developing a reliable, and efficient emergency response application. The development of such applications can meet the incidents that may happen in the Alangilan campus to promote reliability and sustainable development. The implementation of strategies will enhance and smoothen the security and the user experience itself.
+
+<h2>What the project does</h2>
+<h5>An emergency response application that will lessen the workload of reporting any possible threats, and incidents that may occur around the Batangas State University Alangilan Campus</h5>
+
 
 # Team Members/Developers
 [Balacaña, Jerecho S.]()

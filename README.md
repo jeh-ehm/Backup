@@ -27,5 +27,5 @@ To summarize, incorporating the BatSafeU mobile application can make a substanti
 
 # Team Members/Developers
 [Balacaña, Jerecho S.]()
-[Perez, Emanuel Jonathan L.]()
+[Perez, Emanuel Jonathan L.](https://github.com/EJPerez1)
 [Serdeña, Jan Marc G](https://github.com/jeh-ehm)

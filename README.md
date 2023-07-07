@@ -26,7 +26,10 @@ BatSafeU will be a tool for individuals around the whole campus. An application 
 3. once the dependencies installation is complete run this
 ``` npm
   ionic serve
-``` 
+```
+<h5>When it comes to running the system, first we need to prioritize the development of our software to be able to develop and run the application. While the administrator or the IMT itself take over the system's functionalities the students can log in to the application with the use of their own BSU credentials. Moreover, the admin or IMT itself has the authorization to respond in every situation being reported if necessary, they are also the one who is responsible is sorting all the data being reported in the system. On the other hand, the users of the application have the ability to use all the functionalities of our application from reporting incidents, and threats that may happen or currently happening to viewing some of our safety tips and guidelines that are provided also by the IMT.</h5>
+
+
 
 # Team Members/Developers
 + [Balacaña, Jerecho S.]()

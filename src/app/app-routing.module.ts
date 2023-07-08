@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'home-landing',
     loadChildren: () => import('./home-landing/home-landing.module').then( m => m.HomeLandingPageModule)
+  },  {
+    path: 'guestpage',
+    loadChildren: () => import('./guestpage/guestpage.module').then( m => m.GuestpagePageModule)
   },
+
 
 ];
 

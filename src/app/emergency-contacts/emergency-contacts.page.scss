@@ -56,7 +56,8 @@ ion-input, ion-textarea {
 
 .body {
     position: relative;
-    max-height: 76.9vh;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 hr {

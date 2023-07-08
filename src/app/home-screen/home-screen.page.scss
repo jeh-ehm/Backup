@@ -37,3 +37,12 @@ ion-tab-button {
 .ion-notif {
     background-color: transparent;
 }
+
+#header ion-toolbar {
+    --background: transparent;
+}
+
+#header ion-toolbar ion-icon {
+    color: white;
+    font-size: 2rem;
+}

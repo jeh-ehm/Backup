@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class IncidentPage implements OnInit {
 
+  isToastOpen = false;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -15,6 +17,10 @@ export class IncidentPage implements OnInit {
 
   goBack() {
     this.router.navigate(['./home-screen']);
+  }
+
+  setOpen(isOpen: boolean) {
+    this.isToastOpen = isOpen;
   }
 
 }

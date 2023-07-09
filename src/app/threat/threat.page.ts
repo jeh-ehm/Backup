@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./threat.page.scss'],
 })
 export class ThreatPage implements OnInit {
+  isToastOpen = false;
 
   constructor(private router: Router) { }
 
@@ -16,6 +17,10 @@ export class ThreatPage implements OnInit {
 
   goBack(){
     this.router.navigate(['/home-screen'])
+  }
+
+  setOpen(isOpen: boolean) {
+    this.isToastOpen = isOpen;
   }
 
 }

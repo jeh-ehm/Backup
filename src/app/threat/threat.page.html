@@ -24,8 +24,14 @@
       </div>
     </div>
     <div class="buttonArea">
-      <ion-button color="success" size="medium"> Submit Report </ion-button>
-      <ion-button color="success" size="medium"> Take a Photo </ion-button>
+      <ion-button color="success" size="medium" (click)="setOpen(true)"> Submit Report </ion-button>
+      <ion-button color="success" size="medium" (click)="setOpen(true)"> Take a Photo </ion-button>
     </div>
   </div>
+  <ion-toast
+    [isOpen]="isToastOpen"
+    message="This feature is under construction"
+    [duration]="5000"
+    (didDismiss)="setOpen(false)"
+  ></ion-toast>
 </ion-content>

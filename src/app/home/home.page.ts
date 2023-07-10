@@ -12,5 +12,8 @@ export class HomePage {
   handleLogin() {
     this.router.navigate(['/login']);
   }
+  gotoGuestPage() {
+    this.router.navigate(['/guestpage']);
+  }
 
 }

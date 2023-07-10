@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+}
+
+.container {
+    background: #FF3131;
+    border-radius: 25px 25px 0 0;
+    height: 76.9vh;
+    display: block;
+}
+
+.header {
+    color: #fff;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+}
+
+ion-input, ion-textarea {
+    --background: #fff;
+    width: 90vw;
+    margin: .3rem auto;
+    --border-radius: 10px;
+}
+
+#title-action {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-35%, -50%);
+    color: #fff;
+}
+
+.header ion-toolbar {
+    --background: transparent;
+}
+
+.header ion-button {
+    color: #fff;
+}
+
+::ng-deep ion-input::part(placeholder) {
+    --color: red;
+    --font-style: italic;
+  }
+
+.contacts-container {
+    width: 90vw;
+    height: 10vh;
+    background-color: white;
+    opacity: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.body {
+    position: relative;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+hr {
+    border-top: 3px solid grey;
+    opacity: 30%;
+    margin: 2px 0;
+}

@@ -1,9 +1,11 @@
 <ion-content>
   <ion-header id="header">
-    <h1>BatSafeU</h1>
-    <ion-button class="ion-notif">
-      <ion-icon name="notifications-outline"></ion-icon>
-    </ion-button>
+    <ion-toolbar>
+      <h1>BatSafeU</h1>
+      <ion-button fill="clear" color="white" slot="end" id="notification-btn"> 
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
   </ion-header>
 
   <ion-item> What to do? </ion-item>
@@ -14,7 +16,7 @@
         Report Threat
       </ion-tab-button>
       <ion-tab-button tab="incident">
-        <ion-icon name="alert-circle-outline"></ion-icon>
+        <ion-icon name="alert-circle-outline" ></ion-icon>
         Report Incident
       </ion-tab-button>
       <ion-tab-button tab="guidelines">
@@ -31,4 +33,14 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
+
+  <ion-popover trigger="notification-btn" triggerAction="click" >
+    <ng-template>
+      <ion-content class="ion-padding notif-container" >
+        <ion-header class="notif-header ion-no-border" >
+          Notifications
+        </ion-header>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>

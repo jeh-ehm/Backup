@@ -1,9 +1,11 @@
-
 <ion-content>
   <div class="button-container">
-    <button ion-button class="round-button" #roundButton>Quick Alert</button>
+    <button ion-button class="round-button" id="roundButton">Quick Alert</button>
   </div>
   <ion-button (click)="logOut()">
     <ion-icon name="log-out-outline"></ion-icon>
   </ion-button>
+
+  <ion-toast trigger="roundButton" message="This feature is under construction" [duration]="5000"></ion-toast>
+
 </ion-content>

@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-threat',
-  templateUrl: './threat.page.html',
-  styleUrls: ['./threat.page.scss'],
+  selector: 'app-guestpage',
+  templateUrl: './guestpage.page.html',
+  styleUrls: ['./guestpage.page.scss'],
 })
-export class ThreatPage implements OnInit {
-  isToastOpen = false;
+export class GuestpagePage implements OnInit {
 
+  isToastOpen = false;
+      
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  goBack(){
-    this.router.navigate(['/home-screen'])
-  }
-
   setOpen(isOpen: boolean) {
     this.isToastOpen = isOpen;
+  }
+
+  goBack(){
+    this.router.navigate(['/home'])
   }
 
 }

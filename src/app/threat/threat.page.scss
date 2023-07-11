@@ -58,7 +58,8 @@ ion-label {
     color: #fff;
 }
 
-::ng-deep ion-input::part(placeholder) {
-    --color: red;
-    --font-style: italic;
-  }
+
+ion-toast{
+    --background: white;
+    color: red;
+}

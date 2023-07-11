@@ -1,48 +1,41 @@
-<ion-content>
-  <ion-button id="modal-trigger">
-    open
-  </ion-button>
-  <ion-modal trigger="modal-trigger" [initialBreakpoint]="0.775" [breakpoints]="[0, 0.775]">
-    <ng-template>
-      <div class="container">
-        <div class="header">
-          <ion-toolbar>
-            <ion-button fill="clear" color="white" (click) = "goBack()" slot="start">
-              <ion-icon name="arrow-back"></ion-icon>
-            </ion-button>
-            <h2 id="title-action">Report A Incident</h2>
-          </ion-toolbar>
-        </div>
-    
-        <div class="reportField">
-          <div class="inputField">
-            <ion-label>Incident Name</ion-label>
-            <ion-input placeholder="Enter incident name" class="customInput"></ion-input>
-          </div>
-          <div class="inputField">
-            <ion-label>Location</ion-label>
-            <ion-input placeholder="Enter floor no or landmark"></ion-input>
-          </div>
-          <div class="inputField">
-            <ion-label>Short Description</ion-label>
-            <ion-textarea rows=10 autogrow=true placeholder="Enter meaningful description"></ion-textarea>
-          </div>
-        </div>
-        <div class="buttonArea">
-          <ion-button color="success" size="medium" (click)="setOpen(true)">
-            Submit Report
-          </ion-button>
-          <ion-button color="success" size="medium" (click)="setOpen(true)">
-            Take a Photo
-          </ion-button>
-        </div>
+<ion-content class="animate-on-load">
+  <div class="container">
+    <div class="header">
+      <ion-toolbar>
+        <ion-button fill="clear" color="white" (click) = "goBack()" slot="start">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+        <h2 id="title-action">Report A Incident</h2>
+      </ion-toolbar>
+    </div>
+
+    <div class="reportField">
+      <div class="inputField">
+        <ion-label>Incident Name</ion-label>
+        <ion-input placeholder="Enter incident name" class="customInput"></ion-input>
       </div>
-    </ng-template>
-  </ion-modal>
-  <ion-toast
-    [isOpen]="isToastOpen"
-    message="This feature is under construction"
-    [duration]="5000"
-    (didDismiss)="setOpen(false)"
-  ></ion-toast>
+      <div class="inputField">
+        <ion-label>Location</ion-label>
+        <ion-input placeholder="Enter floor no or landmark"></ion-input>
+      </div>
+      <div class="inputField">
+        <ion-label>Short Description</ion-label>
+        <ion-textarea rows=10 autogrow=true placeholder="Enter meaningful description"></ion-textarea>
+      </div>
+    </div>
+    <div class="buttonArea">
+      <ion-button color="success" size="medium" (click)="setOpen(true)">
+        Submit Report
+      </ion-button>
+      <ion-button color="success" size="medium" (click)="setOpen(true)">
+        Take a Photo
+      </ion-button>
+    </div>
+  </div>
 </ion-content>
+<ion-toast
+  [isOpen]="isToastOpen"
+  message="This feature is under development"
+  [duration]="3000"
+  (didDismiss)="setOpen(false)"
+></ion-toast>

@@ -37,10 +37,9 @@ ion-label {
 
 .buttonArea {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 10%;
     display: inline-block;
-    transform: translateY(-60%);
 }
 
 #title-action {
@@ -57,11 +56,6 @@ ion-label {
 
 .header ion-button {
     color: #fff;
-}
-
-::ng-deep ion-input::part(placeholder) {
-    --color: red;
-    --font-style: italic;
 }
 
 ion-modal{

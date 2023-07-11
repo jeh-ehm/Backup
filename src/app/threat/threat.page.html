@@ -1,4 +1,4 @@
-<ion-content >
+<ion-content class="animate-on-load">
   <div class="container">
     <div class="header">
       <ion-toolbar>
@@ -28,10 +28,11 @@
       <ion-button color="success" size="medium" (click)="setOpen(true)"> Take a Photo </ion-button>
     </div>
   </div>
-  <ion-toast
-    [isOpen]="isToastOpen"
-    message="This feature is under construction"
-    [duration]="5000"
-    (didDismiss)="setOpen(false)"
-  ></ion-toast>
 </ion-content>
+
+<ion-toast
+  [isOpen]="isToastOpen"
+  message="This feature is under development"
+  [duration]="3000"
+  (didDismiss)="setOpen(false)"
+></ion-toast>

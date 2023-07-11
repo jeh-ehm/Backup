@@ -35,12 +35,12 @@ export class LoginPage implements OnInit {
     // this.loginService.login(credentials)
     //   .pipe(takeUntil(this.unsubscribe$))
     //   .subscribe(
-    //     (response) => {
-    //       this.router.navigate(['./home-screen']);
-    //     },
-    //     (error) => {
-    //       // Handle error
-    //       console.error(error);
+    //     {
+    //       next: response => {
+    //         console.log(response),
+    //         this.router.navigate(['./home-screen']);
+    //       },
+    //       error: error => console.log(error)
     //     }
     //   );
   }

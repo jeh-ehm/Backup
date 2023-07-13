@@ -17,12 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'home-screen',
-    loadChildren: () => import('./home-screen/home-screen.module').then( m => m.HomeScreenPageModule)
+    loadChildren: () => import('./home-screen/home-screen.module').then( m => m.HomeScreenPageModule),
   },
   {
-    path: 'home-landing',
-    loadChildren: () => import('./home-landing/home-landing.module').then( m => m.HomeLandingPageModule)
-  },  {
     path: 'guestpage',
     loadChildren: () => import('./guestpage/guestpage.module').then( m => m.GuestpagePageModule)
   },

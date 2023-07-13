@@ -15,6 +15,6 @@ import { HomeLandingPage } from './home-landing.page';
     IonicModule,
     HomeLandingPageRoutingModule
   ],
-  declarations: [HomeLandingPage]
+  declarations: [HomeLandingPage],
 })
 export class HomeLandingPageModule {}

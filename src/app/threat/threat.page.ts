@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { AnimationController, Animation } from '@ionic/angular';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-threat',
@@ -10,9 +11,12 @@ import { AnimationController, Animation } from '@ionic/angular';
 export class ThreatPage implements OnInit {
   isToastOpen = false;
 
-  constructor(private router: Router, private animationCtrl: AnimationController, private elementRef: ElementRef) { }
+  constructor(private router: Router, private animationCtrl: AnimationController, private elementRef: ElementRef, private authService: AuthService) { }
 
   ngOnInit() {
+    if (!this.authService.isLoggedIn()) {
+      this.router.navigate(['/login']);
+    } 
   }
 
   goBack() {

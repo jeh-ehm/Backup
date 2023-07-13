@@ -15,6 +15,6 @@ import { IncidentPage } from './incident.page';
     IonicModule,
     IncidentPageRoutingModule
   ],
-  declarations: [IncidentPage]
+  declarations: [IncidentPage],
 })
 export class IncidentPageModule {}

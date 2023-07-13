@@ -3,6 +3,7 @@ import { LoginService } from '../services/login.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import {Router} from "@angular/router";
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -16,33 +17,32 @@ export class LoginPage implements OnInit {
   passwordField!: string;
 
   private unsubscribe$ = new Subject<void>();
-  constructor(private loginService: LoginService, private router: Router) { }
+  constructor(private loginService: LoginService, private router: Router, private authService: AuthService) { }
 
   ngOnInit() {
+    this.authService.setLoggedIn(false);
   }
 
   handleLogin() {
-
+    
     const credentials = { username: this.usernameField, password: this.passwordField };
-
-    if (this.usernameField === 'Test' && this.passwordField === '1234') {
-      this.router.navigate(['./home-screen']);
-    } else {
-      console.log("Wrong Credentials");
-    }
     
     // Dummy API Login Implementation
-    // this.loginService.login(credentials)
-    //   .pipe(takeUntil(this.unsubscribe$))
-    //   .subscribe(
-    //     {
-    //       next: response => {
-    //         console.log(response),
-    //         this.router.navigate(['./home-screen']);
-    //       },
-    //       error: error => console.log(error)
-    //     }
-    //   );
+    this.loginService.login(credentials)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(
+        {
+          next: response => {
+            if (response.greeting === "Login Success!") {
+              this.authService.setLoggedIn(true);
+              this.router.navigate(['./home-screen']);
+            } else {
+              console.log("Wrong Password");
+            }
+          },
+          error: error => console.log(error)
+        }
+      );
   }
 
   ngOnDestroy() {

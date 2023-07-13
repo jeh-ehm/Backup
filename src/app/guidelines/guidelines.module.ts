@@ -15,6 +15,6 @@ import { GuidelinesPage } from './guidelines.page';
     IonicModule,
     GuidelinesPageRoutingModule
   ],
-  declarations: [GuidelinesPage]
+  declarations: [GuidelinesPage],
 })
 export class GuidelinesPageModule {}

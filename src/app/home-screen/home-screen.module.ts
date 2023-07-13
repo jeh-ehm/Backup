@@ -15,6 +15,6 @@ import { HomeScreenPage } from './home-screen.page';
     IonicModule,
     HomeScreenPageRoutingModule
   ],
-  declarations: [HomeScreenPage]
+  declarations: [HomeScreenPage],
 })
 export class HomeScreenPageModule {}
